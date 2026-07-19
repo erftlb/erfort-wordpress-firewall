@@ -1,0 +1,28 @@
+/* Erf Admin: shared chrome for in-house plugin screens (Colophon, Shield, ...).
+ * An identical copy lives in each plugin's assets/ folder so every plugin stays
+ * a self-contained "copy the folder" install; only the class names are shared,
+ * so the plugins read as one product line without depending on each other. */
+
+.erf-admin-topbar {
+  display: flex; align-items: center; gap: 14px;
+  background: #0a0a0a; color: #f4f4f4;
+  padding: 18px 22px; border-radius: 8px; margin: 16px 0 10px;
+  font-family: ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace;
+}
+.erf-admin-topbar .mark { font-size: 18px; letter-spacing: 0.14em; font-weight: 700; }
+.erf-admin-topbar .ver {
+  font-size: 11px; color: #b8b8b8; font-family: ui-monospace, monospace;
+  border: 1px solid rgba(255, 255, 255, 0.24); padding: 2px 7px; border-radius: 4px;
+}
+.erf-admin-topbar .tag { margin-left: auto; text-align: right; line-height: 1.35; }
+.erf-admin-topbar .tag .who { display: block; color: #f4f4f4; font-size: 12px; }
+.erf-admin-topbar .tag .what { display: block; color: #8a8a8a; font-size: 11px; }
+
+.erf-admin-credit {
+  margin-top: 26px; padding-top: 14px; border-top: 1px solid #dcdcde;
+  font-family: ui-monospace, monospace; font-size: 11px; letter-spacing: 0.04em; color: #8a8a8a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .erf-admin-topbar { background: #1d1d1d; }
+}
